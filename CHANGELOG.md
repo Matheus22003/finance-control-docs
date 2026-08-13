@@ -12,9 +12,12 @@ segue Keep a Changelog e o projeto usa versionamento semântico.
 - checklist coordenado da primeira release;
 - inventário dos seis repositórios e contratos OpenAPI.
 
+### Changed
+
+- formalização das rotas anônimas controladas necessárias ao ciclo de conta.
+
 ### Pending
 
-- decisão explícita sobre os endpoints anônimos do ciclo de conta;
 - promoção coordenada de `develop` para `main`;
 - tags e GitHub Releases da primeira versão.
 

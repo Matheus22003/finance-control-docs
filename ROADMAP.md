@@ -12,7 +12,7 @@
 - [x] análise e perguntas financeiras via BFF;
 - [x] OpenAPI versionado e proteção contra breaking changes;
 - [x] CI por repositório e E2E integrado com Docker;
-- [ ] resolver a decisão sobre endpoints anônimos do ciclo de conta;
+- [x] formalizar endpoints anônimos controlados do ciclo de conta;
 - [ ] promover `develop` para `main`, criar tags e publicar releases.
 
 ## v0.2.0 — Staging público

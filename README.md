@@ -7,8 +7,7 @@ pessoal, dívidas compartilhadas entre pessoas e análise assistida por IA.
 
 A versão candidata atual é a `v0.1.0`. O MVP web possui autenticação, finanças,
 dívidas, amizades, grupos, notificações em tempo real, dashboard e análise por
-IA. A promoção para `main` depende dos checks de CI e das decisões registradas
-no checklist da release.
+IA. A promoção para `main` depende dos checks de CI e do checklist da release.
 
 ## Repositórios
 

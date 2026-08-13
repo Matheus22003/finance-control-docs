@@ -14,11 +14,12 @@
 
 ## Autenticação e endpoints anônimos
 
-### Estado da v0.1.0-rc
+### Decisão aprovada para a v0.1.0
 
-O desenho original declarava apenas `/health` e `/api/v1/auth/login` como
-anônimos. O ciclo de conta implementado exige também rotas anônimas para criar a
-conta, renovar a sessão, confirmar e-mail e recuperar senha:
+Em 13 de agosto de 2026 foi aprovada uma exceção controlada à regra original,
+que declarava apenas `/health` e `/api/v1/auth/login` como anônimos. O ciclo de
+conta também permite anonimamente as rotas necessárias para criar a conta,
+renovar a sessão, confirmar e-mail e recuperar senha:
 
 - `POST /api/v1/auth/register`;
 - `POST /api/v1/auth/refresh`;
@@ -32,16 +33,10 @@ contra enumeração de contas, tokens temporários ou refresh token rotativo,
 rate limiting e validação de entrada. Todo endpoint de perfil, finanças,
 dívidas, amizades, grupos, notificações e IA permanece protegido por JWT.
 
-### Decisão pendente para a v0.1.0
-
-A release só deve ser promovida para `main` depois de uma das alternativas ser
-aprovada:
-
-- formalizar as rotas acima como exceções anônimas controladas; ou
-- remover esses fluxos da v0.1.0 e voltar à regra literal original.
-
-A recomendação técnica é formalizar a exceção controlada, pois proteger cadastro,
-refresh, confirmação e recuperação com JWT tornaria esses fluxos impossíveis.
+Essa lista é fechada. Qualquer nova rota anônima exige outra decisão explícita.
+Proteger cadastro, refresh, confirmação e recuperação com JWT tornaria esses
+fluxos impossíveis; por isso a exceção preserva o ciclo de conta sem ampliar o
+acesso a dados de negócio.
 
 ## Autenticação entre BFF e microserviços
 
