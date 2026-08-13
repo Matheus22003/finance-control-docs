@@ -13,7 +13,7 @@
 - [x] OpenAPI versionado e proteção contra breaking changes;
 - [x] CI por repositório e E2E integrado com Docker;
 - [x] formalizar endpoints anônimos controlados do ciclo de conta;
-- [ ] promover `develop` para `main`, criar tags e publicar releases.
+- [x] promover `develop` para `main`, criar tags e publicar releases.
 
 ## v0.2.0 — Staging público
 

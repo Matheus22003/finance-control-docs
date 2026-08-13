@@ -5,6 +5,8 @@ segue Keep a Changelog e o projeto usa versionamento semântico.
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-08-13
+
 ### Added
 
 - documentação central de arquitetura, APIs, execução local e qualidade;
@@ -16,9 +18,11 @@ segue Keep a Changelog e o projeto usa versionamento semântico.
 
 - formalização das rotas anônimas controladas necessárias ao ciclo de conta.
 
-### Pending
+### Released
 
-- promoção coordenada de `develop` para `main`;
-- tags e GitHub Releases da primeira versão.
+- promoção coordenada de `develop` para `main` concluída nos seis repositórios;
+- tags e GitHub Releases `v0.1.0` publicadas;
+- pipelines da `main` e smoke test da stack versionada aprovados.
 
-[Unreleased]: https://github.com/Matheus22003/finance-control-docs/compare/main...develop
+[Unreleased]: https://github.com/Matheus22003/finance-control-docs/compare/v0.1.0...develop
+[0.1.0]: https://github.com/Matheus22003/finance-control-docs/releases/tag/v0.1.0

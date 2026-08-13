@@ -5,9 +5,10 @@ pessoal, dívidas compartilhadas entre pessoas e análise assistida por IA.
 
 ## Estado do projeto
 
-A versão candidata atual é a `v0.1.0`. O MVP web possui autenticação, finanças,
-dívidas, amizades, grupos, notificações em tempo real, dashboard e análise por
-IA. A promoção para `main` depende dos checks de CI e do checklist da release.
+A versão estável atual é a `v0.1.0`, publicada em 13 de agosto de 2026 nos seis
+repositórios. O MVP web possui autenticação, finanças, dívidas, amizades, grupos,
+notificações em tempo real, dashboard e análise por IA. A versão foi promovida
+para `main` por pull requests, validada pelo CI e por smoke test da stack Docker.
 
 ## Repositórios
 
