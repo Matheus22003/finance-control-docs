@@ -5,6 +5,13 @@ segue Keep a Changelog e o projeto usa versionamento semântico.
 
 ## [Unreleased]
 
+### Added
+
+- ADR aceito para staging da v0.2.0 com custo financeiro máximo zero;
+- comparação atualizada de provedores, custos e limitações de free tier;
+- topologia Cloudflare Pages/Worker, OCI Ampere A1 e três PostgreSQL Neon;
+- plano incremental de deploy, migrations e recuperação da VM.
+
 ## [0.1.0] - 2026-08-13
 
 ### Added
