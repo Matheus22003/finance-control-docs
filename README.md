@@ -25,8 +25,10 @@ para `main` por pull requests, validada pelo CI e por smoke test da stack Docker
 
 - [Visão de arquitetura](architecture/overview.md)
 - [Decisões e regras arquiteturais](architecture/decisions.md)
+- [ADR 0001 — Staging com custo zero](architecture/adr/0001-staging-platform.md)
 - [Contratos de API](api/README.md)
 - [Execução local](development/local-setup.md)
+- [Plano de implantação do staging com custo zero](development/staging-rollout.md)
 - [Estratégia de testes](quality/testing.md)
 - [Checklist da versão 0.1.0](releases/v0.1.0.md)
 - [Roadmap](ROADMAP.md)

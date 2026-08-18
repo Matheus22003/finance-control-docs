@@ -12,6 +12,13 @@
 7. Contratos OpenAPI versionados são protegidos contra breaking changes no CI.
 8. Mudanças de arquitetura exigem decisão explícita antes da implementação.
 
+## Decisões de staging
+
+- [ADR 0001 — Plataforma de staging com custo zero](adr/0001-staging-platform.md):
+  aprovado em 17 de agosto de 2026. Define Cloudflare Pages/Workers para o
+  frontend, OCI Ampere A1 para os três backends e três projetos PostgreSQL
+  independentes no Neon.
+
 ## Autenticação e endpoints anônimos
 
 ### Decisão aprovada para a v0.1.0
