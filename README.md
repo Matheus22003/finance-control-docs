@@ -5,10 +5,10 @@ pessoal, dívidas compartilhadas entre pessoas e análise assistida por IA.
 
 ## Estado do projeto
 
-A versão estável atual é a `v0.1.0`, publicada em 13 de agosto de 2026 nos seis
-repositórios. O MVP web possui autenticação, finanças, dívidas, amizades, grupos,
-notificações em tempo real, dashboard e análise por IA. A versão foi promovida
-para `main` por pull requests, validada pelo CI e por smoke test da stack Docker.
+A versão candidata atual é a `v1.0.0-mvp`. O MVP web possui autenticação,
+finanças, dívidas, amizades, grupos, notificações em tempo real, dashboard e
+análise por IA. O ambiente público usa Vercel, ZimaOS, zrok e três PostgreSQL
+Neon, com CI, deploy automático, observabilidade e restauração ensaiada.
 
 ## Repositórios
 
@@ -26,15 +26,19 @@ para `main` por pull requests, validada pelo CI e por smoke test da stack Docker
 - [Visão de arquitetura](architecture/overview.md)
 - [Decisões e regras arquiteturais](architecture/decisions.md)
 - [ADR 0001 — Staging com custo zero](architecture/adr/0001-staging-platform.md)
+- [ADR 0002 — Staging público com Vercel e ZimaOS](architecture/adr/0002-zimaos-vercel-staging.md)
 - [Contratos de API](api/README.md)
 - [Execução local](development/local-setup.md)
 - [Plano de implantação do staging com custo zero](development/staging-rollout.md)
 - [Estratégia de testes](quality/testing.md)
+- [Runbook operacional](operations/runbook.md)
+- [Backup e restauração](operations/backup-restore.md)
 - [Checklist da versão 0.1.0](releases/v0.1.0.md)
+- [Checklist da versão 1.0.0-mvp](releases/v1.0.0-mvp.md)
 - [Roadmap](ROADMAP.md)
 - [Changelog](CHANGELOG.md)
 
-## Stack da v0.1.0
+## Stack do MVP
 
 - Angular `22.1.0`, TypeScript `6.0.2` e Node.js `26.4.0`;
 - .NET SDK `10.0.301` e runtime ASP.NET Core `10.0.10`;
