@@ -23,7 +23,7 @@
 - [x] adicionar backup e ensaio de restauração;
 - [x] configurar observabilidade local e retenção;
 - [x] limitar a exposição pública ao Caddy e BFF;
-- [ ] realizar o smoke test final e marcar `v1.0.0-mvp`;
+- [x] realizar o smoke test final e marcar `v1.0.0-mvp`;
 - [ ] adicionar alertas externos e cópia criptografada fora do host no pós-MVP.
 
 ## v0.3.0 — Produto e experiência
