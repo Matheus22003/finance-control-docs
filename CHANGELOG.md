@@ -5,6 +5,8 @@ segue Keep a Changelog e o projeto usa versionamento semântico.
 
 ## [Unreleased]
 
+## [1.0.0-mvp] - 2026-08-25
+
 ### Added
 
 - runbook operacional com mapa de componentes, comandos e diagnóstico;
@@ -35,5 +37,6 @@ segue Keep a Changelog e o projeto usa versionamento semântico.
 - tags e GitHub Releases `v0.1.0` publicadas;
 - pipelines da `main` e smoke test da stack versionada aprovados.
 
-[Unreleased]: https://github.com/Matheus22003/finance-control-docs/compare/v0.1.0...develop
+[Unreleased]: https://github.com/Matheus22003/finance-control-docs/compare/v1.0.0-mvp...develop
+[1.0.0-mvp]: https://github.com/Matheus22003/finance-control-docs/releases/tag/v1.0.0-mvp
 [0.1.0]: https://github.com/Matheus22003/finance-control-docs/releases/tag/v0.1.0
