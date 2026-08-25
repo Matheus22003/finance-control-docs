@@ -5,7 +5,7 @@ pessoal, dívidas compartilhadas entre pessoas e análise assistida por IA.
 
 ## Estado do projeto
 
-A versão candidata atual é a `v1.0.0-mvp`. O MVP web possui autenticação,
+A versão estável atual é a `v1.0.0-mvp`. O MVP web possui autenticação,
 finanças, dívidas, amizades, grupos, notificações em tempo real, dashboard e
 análise por IA. O ambiente público usa Vercel, ZimaOS, zrok e três PostgreSQL
 Neon, com CI, deploy automático, observabilidade e restauração ensaiada.
