@@ -98,6 +98,16 @@ pwsh -File .\tools\Invoke-ZimaOsFinanceControl.ps1 -Action AutoDeployStatus
 pwsh -File .\tools\Invoke-ZimaOsFinanceControl.ps1 -Action Health
 ```
 
+Smoke test público sem imprimir credenciais ou conteúdo financeiro:
+
+```powershell
+pwsh -File .\tools\Test-PublicStaging.ps1
+```
+
+O comando valida SPA, health do BFF, autenticação, refresh, logout, dashboard,
+Finance, Debt, notificações, correlação e IA exclusivamente pelas rotas públicas
+permitidas.
+
 ## Diagnóstico rápido
 
 ### Site abre, mas login ou API falha
