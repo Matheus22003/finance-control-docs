@@ -15,9 +15,10 @@
 ## Decisões de staging
 
 - [ADR 0001 — Plataforma de staging com custo zero](adr/0001-staging-platform.md):
-  aprovado em 17 de agosto de 2026. Define Cloudflare Pages/Workers para o
-  frontend, OCI Ampere A1 para os três backends e três projetos PostgreSQL
-  independentes no Neon.
+  substituído depois que não houve capacidade OCI Always Free disponível.
+- [ADR 0002 — Staging público com Vercel e ZimaOS](adr/0002-zimaos-vercel-staging.md):
+  aprovado em 25 de agosto de 2026. Define Vercel para a SPA, ZimaOS e zrok
+  para os backends, três Neon independentes e observabilidade local.
 
 ## Autenticação e endpoints anônimos
 

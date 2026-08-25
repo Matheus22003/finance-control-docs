@@ -7,6 +7,10 @@ segue Keep a Changelog e o projeto usa versionamento semântico.
 
 ### Added
 
+- runbook operacional com mapa de componentes, comandos e diagnóstico;
+- documentação de backup, restauração e limitações de resiliência;
+- ADR 0002 para Vercel, ZimaOS, zrok, Neon e observabilidade local;
+- checklist coordenado da release `v1.0.0-mvp`;
 - ADR aceito para staging da v0.2.0 com custo financeiro máximo zero;
 - comparação atualizada de provedores, custos e limitações de free tier;
 - topologia Cloudflare Pages/Worker, OCI Ampere A1 e três PostgreSQL Neon;
