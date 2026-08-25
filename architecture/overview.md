@@ -111,3 +111,14 @@ Cada requisição recebe um UUID em `X-Correlation-ID`. O BFF propaga esse valor
 aos microserviços. Logs estruturados registram método, caminho, status e duração,
 sem payloads, tokens ou parâmetros financeiros. ProblemDetails inclui
 `correlationId` e `traceId`.
+
+## Implantação pública do MVP
+
+A SPA é publicada pela Vercel. Requisições `/api/*` chegam ao Caddy no ZimaOS
+por uma share zrok; o Caddy encaminha somente ao BFF. Finance e Debt não têm
+porta pública. Os três serviços usam projetos Neon separados. Beszel e Uptime
+Kuma ficam somente na LAN, e o backup semanal valida a restauração em recursos
+descartáveis.
+
+Consulte o [ADR 0002](adr/0002-zimaos-vercel-staging.md) para a decisão e o
+[runbook operacional](../operations/runbook.md) para manutenção.

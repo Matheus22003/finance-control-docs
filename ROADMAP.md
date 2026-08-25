@@ -13,17 +13,18 @@
 - [x] OpenAPI versionado e proteção contra breaking changes;
 - [x] CI por repositório e E2E integrado com Docker;
 - [x] formalizar endpoints anônimos controlados do ciclo de conta;
-- [ ] promover `develop` para `main`, criar tags e publicar releases.
+- [x] promover `develop` para `main`, criar tags e publicar releases.
 
 ## v0.2.0 — Staging público
 
-- selecionar hospedagem e provedor PostgreSQL com três bancos isolados;
-- configurar domínio, TLS, secrets e variáveis por ambiente;
-- executar migrations como etapa controlada do deploy;
-- adicionar backup e teste de restauração;
-- configurar observabilidade centralizada, retenção e alertas;
-- limitar CORS e forwarded headers aos proxies reais;
-- realizar smoke tests após deploy.
+- [x] selecionar hospedagem gratuita e três bancos isolados;
+- [x] configurar Vercel, zrok, TLS, secrets e variáveis por ambiente;
+- [x] executar migrations controladas na inicialização de cada serviço;
+- [x] adicionar backup e ensaio de restauração;
+- [x] configurar observabilidade local e retenção;
+- [x] limitar a exposição pública ao Caddy e BFF;
+- [ ] realizar o smoke test final e marcar `v1.0.0-mvp`;
+- [ ] adicionar alertas externos e cópia criptografada fora do host no pós-MVP.
 
 ## v0.3.0 — Produto e experiência
 
