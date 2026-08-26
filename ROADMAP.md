@@ -28,16 +28,16 @@
 
 ## v0.3.0 — Produto e experiência
 
-- push notifications para web e futuros aplicativos;
-- preferências de notificação por evento e canal;
-- relatórios exportáveis e histórico analítico;
-- acessibilidade auditada e testes visuais multi-viewport;
-- Buy Me a Coffee sem interferir nos fluxos financeiros.
+- [x] push notifications para web;
+- [x] preferências de notificação por evento e canal;
+- [ ] relatórios exportáveis e histórico analítico;
+- [ ] acessibilidade auditada e testes visuais multi-viewport;
+- [ ] Buy Me a Coffee sem interferir nos fluxos financeiros.
 
 ## Futuro — Aplicativos móveis
 
 - definir tecnologia mobile sem alterar o contrato BFF-first;
 - reutilizar login, refresh, REST e eventos de notificação do BFF;
 - armazenamento seguro de credenciais no dispositivo;
-- push notifications via APNs/FCM;
+- push notifications via APNs/FCM, reutilizando as preferências do BFF;
 - testes de contrato compartilhados entre web e mobile.

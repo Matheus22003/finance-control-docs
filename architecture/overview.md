@@ -94,9 +94,11 @@ contrato próprio do BFF.
 ### Notificações
 
 Eventos de amizades, grupos, dívidas, pagamentos, liquidações, orçamentos e
-metas são persistidos no BFF. O SignalR apenas avisa que houve mudança; o cliente
-sempre relê o estado oficial pelos endpoints REST. Chaves de deduplicação evitam
-alertas repetidos após reconexões.
+metas são persistidos no BFF. Preferências globais e por tipo determinam a
+entrega in-app, por Web Push ou e-mail. O SignalR apenas avisa que houve mudança;
+o cliente sempre relê o estado oficial pelos endpoints REST. Chaves de
+deduplicação evitam alertas repetidos após reconexões. Consulte a
+[arquitetura de notificações](notifications.md).
 
 ### Inteligência artificial
 
@@ -120,5 +122,6 @@ porta pública. Os três serviços usam projetos Neon separados. Beszel e Uptime
 Kuma ficam somente na LAN, e o backup semanal valida a restauração em recursos
 descartáveis.
 
-Consulte o [ADR 0002](adr/0002-zimaos-vercel-staging.md) para a decisão e o
+Consulte o [ADR 0002](adr/0002-zimaos-vercel-staging.md) para a decisão, o
+[guia do ZimaOS](../operations/zimaos-guide.md) para entender o host e o
 [runbook operacional](../operations/runbook.md) para manutenção.

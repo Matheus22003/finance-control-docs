@@ -37,6 +37,22 @@ descartável. A cobertura inclui:
 Em falhas, o CI publica relatório HTML, trace, screenshot, vídeo e logs do Docker
 Compose por sete dias.
 
+### Notificações multicanal
+
+A v1.1.0 cobre o catálogo de 24 eventos e as preferências por sistema, push e
+e-mail em testes automatizados do BFF e frontend. A validação manual pública
+também confirmou:
+
+- permissão e cadastro de um navegador Edge no Windows;
+- dispositivo persistido e listado na tela de conta;
+- evento social real criado por uma segunda conta;
+- atualização da central in-app;
+- aceitação HTTP `201` pelo push service;
+- recebimento da notificação pelo sistema operacional.
+
+Web Push exige navegador real e permissão do usuário; por isso a confirmação no
+sistema operacional complementa, mas não substitui, a suíte determinística.
+
 ## Comandos
 
 ```powershell
@@ -70,3 +86,6 @@ docker compose --env-file .env.example config --quiet
 - CI integrado da Infra concluído com os 11 E2E;
 - documentação e changelog atualizados;
 - decisão arquitetural pendente da release resolvida.
+
+Consulte o [fluxo de implantação](../development/deployment-flow.md) para a
+promoção entre `develop`, preview e produção.
