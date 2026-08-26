@@ -23,7 +23,7 @@ flowchart LR
 ### Frontend
 
 - login, cadastro e ciclo de conta;
-- dashboard, finanças, dívidas, pessoas, amizades e grupos;
+- dashboard, finanças, dívidas, pessoas, amizades, grupos e relatórios;
 - central de notificações com atualização via SignalR;
 - dark mode, layout responsivo e persistência segura da sessão por cookies;
 - nenhuma chamada direta aos microserviços ou ao provedor de IA.
@@ -34,7 +34,7 @@ flowchart LR
   HttpOnly;
 - autorização, rate limiting e respostas ProblemDetails;
 - fachadas tipadas para Finance e Debt;
-- agregação paralela do dashboard;
+- agregação paralela do dashboard e dos relatórios históricos;
 - persistência de perfil, sessões e notificações;
 - sanitização, aliases e rate limiting antes de acessar a IA;
 - propagação de `X-Correlation-ID` e hub SignalR autenticado.
@@ -46,6 +46,7 @@ flowchart LR
 - recorrências, orçamento mensal e resumo por período;
 - metas, ledger de aportes e vínculo auditável com receitas;
 - tendências e projeção de fluxo de caixa;
+- histórico analítico de lançamentos, categorias e maiores despesas;
 - schema controlado por Flyway.
 
 ### Debt Service
@@ -55,6 +56,7 @@ flowchart LR
 - dívidas compartilhadas com pagador e participantes independentes;
 - pagamentos com confirmação/rejeição;
 - histórico da dívida;
+- histórico analítico da posição do usuário e categorias de dívida;
 - cálculo de transferências simplificadas;
 - schema controlado por Entity Framework Core Migrations.
 
@@ -99,6 +101,13 @@ entrega in-app, por Web Push ou e-mail. O SignalR apenas avisa que houve mudanç
 o cliente sempre relê o estado oficial pelos endpoints REST. Chaves de
 deduplicação evitam alertas repetidos após reconexões. Consulte a
 [arquitetura de notificações](notifications.md).
+
+### Relatórios
+
+O BFF consulta Finance e Debt em paralelo para formar um contrato histórico
+único. Cada domínio calcula suas métricas no próprio banco e o frontend nunca
+acessa os serviços internos. A mesma agregação pode ser exportada em CSV pelo
+BFF. Consulte [relatórios e histórico analítico](reports.md).
 
 ### Inteligência artificial
 

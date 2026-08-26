@@ -9,9 +9,9 @@ APIs internas, acessíveis apenas pelo BFF na rede de serviços.
 
 | API | Snapshot | Escopo atual |
 |---|---|---:|
-| BFF | [openapi-v1.json](https://github.com/Matheus22003/finance-control-bff/blob/develop/openapi/openapi-v1.json) | 79 caminhos |
-| Finance Service | [openapi-v1.json](https://github.com/Matheus22003/finance-control-finance-service/blob/develop/openapi/openapi-v1.json) | 19 caminhos |
-| Debt Service | [openapi-v1.json](https://github.com/Matheus22003/finance-control-debt-service/blob/develop/openapi/openapi-v1.json) | 32 caminhos |
+| BFF | [openapi-v1.json](https://github.com/Matheus22003/finance-control-bff/blob/develop/openapi/openapi-v1.json) | 81 caminhos |
+| Finance Service | [openapi-v1.json](https://github.com/Matheus22003/finance-control-finance-service/blob/develop/openapi/openapi-v1.json) | 20 caminhos |
+| Debt Service | [openapi-v1.json](https://github.com/Matheus22003/finance-control-debt-service/blob/develop/openapi/openapi-v1.json) | 33 caminhos |
 
 Os snapshots são validados sintaticamente e comparados com a branch base pelo
 CI. Remoção de operação, redução de contrato ou outra quebra incompatível falha
@@ -24,6 +24,7 @@ antes do merge.
 | Autenticação e sessões | `/api/v1/auth` |
 | Conta e perfil | `/api/v1/users` |
 | Dashboard | `/api/v1/dashboard` |
+| Relatórios e exportação | `/api/v1/reports` |
 | Finanças | `/api/v1/finance` |
 | Pessoas e dívidas | `/api/v1/people`, `/api/v1/debts` |
 | Amigos e grupos | `/api/v1/friends`, `/api/v1/groups` |

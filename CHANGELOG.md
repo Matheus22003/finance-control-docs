@@ -5,6 +5,18 @@ segue Keep a Changelog e o projeto usa versionamento semântico.
 
 ## [Unreleased]
 
+### Added
+
+- relatórios históricos agregados de finanças e dívidas;
+- exportação CSV pelo BFF e página Angular responsiva em `/reports`;
+- métricas por mês e categoria, maiores despesas, maiores dívidas e destaques;
+- documentação da arquitetura de relatórios para web e futuros apps móveis.
+
+### Changed
+
+- inventário OpenAPI atualizado para 81 caminhos no BFF, 20 no Finance Service
+  e 33 no Debt Service.
+
 ## [1.1.0] - 2026-08-26
 
 ### Added

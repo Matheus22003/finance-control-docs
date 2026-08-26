@@ -30,7 +30,7 @@
 
 - [x] push notifications para web;
 - [x] preferências de notificação por evento e canal;
-- [ ] relatórios exportáveis e histórico analítico;
+- [x] relatórios exportáveis e histórico analítico;
 - [ ] acessibilidade auditada e testes visuais multi-viewport;
 - [ ] Buy Me a Coffee sem interferir nos fluxos financeiros.
 
