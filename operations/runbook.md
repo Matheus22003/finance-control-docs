@@ -87,8 +87,12 @@ o conteúdo integral dos logs sem revisar dados operacionais.
 4. quando há alteração, ele mantém as imagens anteriores, atualiza os três
    serviços e aguarda health checks;
 5. falhas causam rollback e quarentena da combinação defeituosa;
-6. merges do frontend em `develop` são publicados pela Vercel;
-7. uma release estável promove `develop` para `main` e recebe uma tag `v*`.
+6. merges e PRs do frontend em `develop` geram Preview Deployments na Vercel;
+7. uma release estável promove `develop` para `main`, publica a produção da
+   Vercel e recebe uma tag `v*`.
+
+O fluxo completo e os prefixos de branch estão em
+[Git Flow e implantação](../development/deployment-flow.md).
 
 Verificação ou atualização manual:
 
@@ -138,6 +142,15 @@ permitidas.
 Os containers usam `restart: unless-stopped`, o zrok persiste sua identidade e
 os timers usam `Persistent=true`. Depois do boot, valide `Health`,
 `PublicStatus`, `ObservabilityHealth`, `AutoDeployStatus` e `BackupStatus`.
+
+### Push aparece na central, mas não no sistema operacional
+
+1. confirme a permissão de notificações no navegador e no sistema operacional;
+2. abra **Minha conta** e confirme que o dispositivo está cadastrado;
+3. valide as preferências globais e a preferência de push para o evento;
+4. consulte os logs do BFF e procure o resultado da entrega Web Push;
+5. subscriptions expiradas com `404` ou `410` são removidas automaticamente;
+6. não exponha a chave VAPID privada nem tente enviar push pelo frontend.
 
 ## Manutenção segura
 

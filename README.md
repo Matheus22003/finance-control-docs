@@ -5,9 +5,9 @@ pessoal, dívidas compartilhadas entre pessoas e análise assistida por IA.
 
 ## Estado do projeto
 
-A versão estável atual é a `v1.0.0-mvp`. O MVP web possui autenticação,
-finanças, dívidas, amizades, grupos, notificações em tempo real, dashboard e
-análise por IA. O ambiente público usa Vercel, ZimaOS, zrok e três PostgreSQL
+A versão estável atual é a `v1.1.0`. O MVP web possui autenticação, finanças,
+dívidas, amizades, grupos, notificações in-app, e-mail e Web Push, dashboard,
+relatórios exportáveis e análise por IA. O ambiente público usa Vercel, ZimaOS, zrok e três PostgreSQL
 Neon, com CI, deploy automático, observabilidade e restauração ensaiada.
 
 ## Repositórios
@@ -27,14 +27,22 @@ Neon, com CI, deploy automático, observabilidade e restauração ensaiada.
 - [Decisões e regras arquiteturais](architecture/decisions.md)
 - [ADR 0001 — Staging com custo zero](architecture/adr/0001-staging-platform.md)
 - [ADR 0002 — Staging público com Vercel e ZimaOS](architecture/adr/0002-zimaos-vercel-staging.md)
+- [ADR 0003 — Notificações multicanal](architecture/adr/0003-multichannel-notifications.md)
+- [Arquitetura de notificações](architecture/notifications.md)
+- [Relatórios e histórico analítico](architecture/reports.md)
 - [Contratos de API](api/README.md)
 - [Execução local](development/local-setup.md)
+- [Git Flow e implantação](development/deployment-flow.md)
 - [Plano de implantação do staging com custo zero](development/staging-rollout.md)
 - [Estratégia de testes](quality/testing.md)
 - [Runbook operacional](operations/runbook.md)
+- [Guia do servidor ZimaOS](operations/zimaos-guide.md)
+- [Observabilidade](operations/observability.md)
 - [Backup e restauração](operations/backup-restore.md)
+- [Guia para entrevistas e demonstrações](portfolio/interview-guide.md)
 - [Checklist da versão 0.1.0](releases/v0.1.0.md)
 - [Checklist da versão 1.0.0-mvp](releases/v1.0.0-mvp.md)
+- [Release 1.1.0 — Notificações completas](releases/v1.1.0.md)
 - [Roadmap](ROADMAP.md)
 - [Changelog](CHANGELOG.md)
 

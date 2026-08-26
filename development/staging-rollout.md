@@ -2,6 +2,14 @@
 
 Este plano implementa o [ADR 0001](../architecture/adr/0001-staging-platform.md).
 
+> **Documento histórico:** a OCI Always Free não apresentou capacidade para a
+> shape planejada. O ADR 0001 foi substituído pelo
+> [ADR 0002](../architecture/adr/0002-zimaos-vercel-staging.md). O ambiente atual
+> usa Vercel, ZimaOS, zrok e Neon; consulte o
+> [guia do ZimaOS](../operations/zimaos-guide.md) e o
+> [fluxo de implantação](deployment-flow.md). Os marcos abaixo permanecem para
+> registrar o plano avaliado, não como instrução operacional vigente.
+
 ## Marco 0 — Contas e trava de custo
 
 - criar a conta Cloudflare Free e conectar o repositório do frontend;

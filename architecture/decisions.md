@@ -20,6 +20,13 @@
   aprovado em 25 de agosto de 2026. Define Vercel para a SPA, ZimaOS e zrok
   para os backends, três Neon independentes e observabilidade local.
 
+## Decisão de notificações
+
+- [ADR 0003 — Notificações multicanal controladas pelo BFF](adr/0003-multichannel-notifications.md):
+  aprovado em 26 de agosto de 2026. Define persistência e preferências no BFF,
+  SignalR como dica de atualização, Web Push para navegadores e adaptadores
+  futuros para APNs/FCM sem acesso direto dos clientes a provedores.
+
 ## Autenticação e endpoints anônimos
 
 ### Decisão aprovada para a v0.1.0
