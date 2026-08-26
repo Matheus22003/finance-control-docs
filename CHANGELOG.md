@@ -5,6 +5,25 @@ segue Keep a Changelog e o projeto usa versionamento semântico.
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-08-26
+
+### Added
+
+- arquitetura e ADR das notificações multicanal;
+- catálogo de 24 eventos e preferências por sistema, push e e-mail;
+- Web Push com dispositivos, VAPID, limpeza de subscriptions e validação real;
+- guia completo do ZimaOS e inventário de operações seguras;
+- documentação de Git Flow, preview, produção e rollback;
+- guia de observabilidade com Beszel, Uptime Kuma e correlation ID;
+- roteiro técnico para entrevistas e demonstrações;
+- documento coordenado da release `v1.1.0`.
+
+### Changed
+
+- inventário OpenAPI do BFF atualizado de 74 para 79 caminhos;
+- fluxo da Vercel esclarecido: `develop` gera preview e `main` gera produção;
+- plano OCI marcado como histórico após adoção do ZimaOS.
+
 ## [1.0.0-mvp] - 2026-08-25
 
 ### Added
@@ -37,6 +56,7 @@ segue Keep a Changelog e o projeto usa versionamento semântico.
 - tags e GitHub Releases `v0.1.0` publicadas;
 - pipelines da `main` e smoke test da stack versionada aprovados.
 
-[Unreleased]: https://github.com/Matheus22003/finance-control-docs/compare/v1.0.0-mvp...develop
+[Unreleased]: https://github.com/Matheus22003/finance-control-docs/compare/v1.1.0...develop
+[1.1.0]: https://github.com/Matheus22003/finance-control-docs/releases/tag/v1.1.0
 [1.0.0-mvp]: https://github.com/Matheus22003/finance-control-docs/releases/tag/v1.0.0-mvp
 [0.1.0]: https://github.com/Matheus22003/finance-control-docs/releases/tag/v0.1.0

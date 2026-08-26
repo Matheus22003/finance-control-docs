@@ -9,7 +9,7 @@ APIs internas, acessíveis apenas pelo BFF na rede de serviços.
 
 | API | Snapshot | Escopo atual |
 |---|---|---:|
-| BFF | [openapi-v1.json](https://github.com/Matheus22003/finance-control-bff/blob/develop/openapi/openapi-v1.json) | 74 caminhos |
+| BFF | [openapi-v1.json](https://github.com/Matheus22003/finance-control-bff/blob/develop/openapi/openapi-v1.json) | 79 caminhos |
 | Finance Service | [openapi-v1.json](https://github.com/Matheus22003/finance-control-finance-service/blob/develop/openapi/openapi-v1.json) | 19 caminhos |
 | Debt Service | [openapi-v1.json](https://github.com/Matheus22003/finance-control-debt-service/blob/develop/openapi/openapi-v1.json) | 32 caminhos |
 
