@@ -117,6 +117,30 @@ Todos os endpoints abaixo são protegidos por JWT e versionados em `/api/v1`:
 | Registrar dispositivo | `POST /api/v1/notifications/push/subscriptions` |
 | Remover dispositivo | `DELETE /api/v1/notifications/push/subscriptions/{id}` |
 
+## Diagnóstico em produção
+
+O hub nunca é a fonte da verdade: um problema de transporte não impede que a
+central seja carregada novamente pelo REST. No frontend publicado pela Vercel,
+o hub usa Long Polling no caminho relativo `/api/v1/notifications/hub`. Assim,
+as requisições atravessam o rewrite `/api/*` da própria Vercel e chegam ao BFF
+pelo túnel zrok com o cabeçalho de bypass da interstitial. WebSocket direto não
+é usado nesse caminho porque o rewrite externo não suporta seu upgrade.
+
+Para investigar uma falha:
+
+1. atualize a página em uma sessão autenticada e confirme se a central carrega;
+2. veja o console por erros de negociação ou Long Polling;
+3. execute `PublicStatus` e `Health` pelo helper da infraestrutura;
+4. procure o caminho do hub nos logs de `edge` e `bff`, usando correlation ID;
+5. confira CORS do hub: somente a origem pública configurada do frontend é
+   permitida;
+6. não altere o cliente para chamar microserviços nem exponha o hub fora do BFF.
+
+Uma validação real feita em produção em 31/08/2026 criou uma despesa temporária
+acima de um orçamento mínimo. A central recebeu o alerta de orçamento excedido
+e atualizou o contador sem recarregar a página; os dados temporários foram
+removidos após o teste.
+
 ## Segurança e privacidade
 
 - apenas o usuário autenticado gerencia suas preferências e inscrições;

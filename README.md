@@ -35,6 +35,7 @@ Neon, com CI, deploy automático, observabilidade e restauração ensaiada.
 - [Git Flow e implantação](development/deployment-flow.md)
 - [Plano de implantação do staging com custo zero](development/staging-rollout.md)
 - [Estratégia de testes](quality/testing.md)
+- [Manual operacional — comece por aqui](operations/operations-handbook.md)
 - [Runbook operacional](operations/runbook.md)
 - [Guia do servidor ZimaOS](operations/zimaos-guide.md)
 - [Observabilidade](operations/observability.md)
