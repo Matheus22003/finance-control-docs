@@ -27,6 +27,13 @@
   SignalR como dica de atualização, Web Push para navegadores e adaptadores
   futuros para APNs/FCM sem acesso direto dos clientes a provedores.
 
+## Decisão de superfícies de cliente
+
+- [ADR 0004 — Web desktop-first e aplicativo móvel futuro](adr/0004-desktop-first-web-mobile-future.md):
+  aprovado em 2 de setembro de 2026. Define a SPA como superfície principal em
+  desktop, preserva o navegador móvel como fallback seguro e adia a criação do
+  aplicativo até uma decisão explícita de escopo e tecnologia.
+
 ## Autenticação e endpoints anônimos
 
 ### Decisão aprovada para a v0.1.0

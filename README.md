@@ -9,6 +9,8 @@ A versão estável atual é a `v1.1.0`. O MVP web possui autenticação, finanç
 dívidas, amizades, grupos, notificações in-app, e-mail e Web Push, dashboard,
 relatórios exportáveis e análise por IA. O ambiente público usa Vercel, ZimaOS, zrok e três PostgreSQL
 Neon, com CI, deploy automático, observabilidade e restauração ensaiada.
+O produto web é desktop-first; o navegador móvel permanece como fallback seguro
+enquanto um aplicativo dedicado é uma evolução futura.
 
 ## Repositórios
 
@@ -28,6 +30,7 @@ Neon, com CI, deploy automático, observabilidade e restauração ensaiada.
 - [ADR 0001 — Staging com custo zero](architecture/adr/0001-staging-platform.md)
 - [ADR 0002 — Staging público com Vercel e ZimaOS](architecture/adr/0002-zimaos-vercel-staging.md)
 - [ADR 0003 — Notificações multicanal](architecture/adr/0003-multichannel-notifications.md)
+- [ADR 0004 — Web desktop-first e aplicativo móvel futuro](architecture/adr/0004-desktop-first-web-mobile-future.md)
 - [Arquitetura de notificações](architecture/notifications.md)
 - [Relatórios e histórico analítico](architecture/reports.md)
 - [Contratos de API](api/README.md)

@@ -25,8 +25,15 @@ flowchart LR
 - login, cadastro e ciclo de conta;
 - dashboard, finanças, dívidas, pessoas, amizades, grupos e relatórios;
 - central de notificações com atualização via SignalR;
-- dark mode, layout responsivo e persistência segura da sessão por cookies;
+- produto web desktop-first, com dark mode e persistência segura da sessão por
+  cookies;
+- layout responsivo preservado como fallback seguro em navegador móvel, sem
+  compromisso de paridade funcional nessa superfície;
 - nenhuma chamada direta aos microserviços ou ao provedor de IA.
+
+Os futuros aplicativos iOS/Android serão clientes separados do BFF. A escolha
+de tecnologia, o escopo e as garantias de sessão/push serão decididos quando a
+fase mobile for aberta; consulte o [ADR 0004](adr/0004-desktop-first-web-mobile-future.md).
 
 ### BFF
 

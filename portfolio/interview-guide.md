@@ -126,9 +126,11 @@ internos podem evoluir sem expor os microserviços ao cliente.
 
 ### “O que você faria em seguida?”
 
-Prioridades possíveis: relatórios exportáveis, acessibilidade multi-viewport,
-aplicativo móvel com APNs/FCM, cópia criptografada de backup fora do host e
-alertas externos. A escolha depende do objetivo do próximo ciclo.
+Prioridades possíveis: Buy Me a Coffee isolado dos fluxos financeiros,
+acessibilidade desktop, aplicativo móvel com APNs/FCM quando a fase for
+aprovada, cópia criptografada de backup fora do host e alertas externos. A
+escolha depende do objetivo do próximo ciclo. A web atual é desktop-first; o
+navegador móvel é somente um fallback seguro.
 
 ## Documentos para aprofundar
 

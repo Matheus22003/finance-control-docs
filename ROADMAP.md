@@ -31,13 +31,19 @@
 - [x] push notifications para web;
 - [x] preferências de notificação por evento e canal;
 - [x] relatórios exportáveis e histórico analítico;
-- [ ] acessibilidade auditada e testes visuais multi-viewport;
+- [x] formalizar a web como desktop-first e o aplicativo móvel como frente futura;
+- [ ] acessibilidade auditada e testes visuais para desktop (teclado, foco,
+  contraste e resoluções de computador);
 - [ ] Buy Me a Coffee sem interferir nos fluxos financeiros.
 
 ## Futuro — Aplicativos móveis
 
-- definir tecnologia mobile sem alterar o contrato BFF-first;
+- definir tecnologia e escopo mobile sem alterar o contrato BFF-first;
 - reutilizar login, refresh, REST e eventos de notificação do BFF;
 - armazenamento seguro de credenciais no dispositivo;
 - push notifications via APNs/FCM, reutilizando as preferências do BFF;
 - testes de contrato compartilhados entre web e mobile.
+
+O navegador móvel conserva o layout responsivo atual como fallback seguro, mas
+não é uma superfície de produto com paridade planejada. Consulte o
+[ADR 0004](architecture/adr/0004-desktop-first-web-mobile-future.md).
