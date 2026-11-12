@@ -18,8 +18,25 @@ Neon, com CI, deploy automático, observabilidade e restauração ensaiada.
 | [finance-control-bff](https://github.com/Matheus22003/finance-control-bff) | Autenticação, autorização, agregação, SignalR e IA |
 | [finance-control-finance-service](https://github.com/Matheus22003/finance-control-finance-service) | Receitas, despesas, categorias, orçamentos, recorrências e metas |
 | [finance-control-debt-service](https://github.com/Matheus22003/finance-control-debt-service) | Pessoas, amizades, grupos, dívidas, pagamentos e liquidação simplificada |
+| [finance-control-mobile](https://github.com/Matheus22003/finance-control-mobile) | App nativo React Native + Expo para Android/iOS |
 | [finance-control-infra](https://github.com/Matheus22003/finance-control-infra) | Docker Compose, redes, bancos e CI de integração |
-| [finance-control-docs](https://github.com/Matheus22003/finance-control-docs) | Arquitetura, operação, qualidade, roadmap e releases |
+| [finance-control-docs](https://github.com/Matheus22003/finance-control-docs) | Arquitetura, API contracts, operação, qualidade, roadmap e releases |
+
+## Como navegar
+
+```text
+finance-control-docs       ← decisões, contratos e operação
+            │
+            ├── finance-control-frontend  ← cliente web Angular
+            ├── finance-control-mobile    ← cliente nativo Expo
+            ├── finance-control-bff        ← única API pública
+            │       ├── finance-control-finance-service
+            │       └── finance-control-debt-service
+            └── finance-control-infra      ← Compose, staging e deploy
+```
+
+Regra central: web e mobile chamam somente o BFF por `/api/v1`; Finance Service,
+Debt Service e bancos permanecem internos e isolados.
 
 ## Navegação
 
@@ -53,6 +70,7 @@ Neon, com CI, deploy automático, observabilidade e restauração ensaiada.
 - Java `21`, Spring Boot `4.0.3` e Maven `3.9.12`;
 - PostgreSQL `17.10` com um banco exclusivo por serviço;
 - Docker Compose, OpenAPI `3.1`, Swagger UI, Scalar e Playwright `1.62.1`.
+- React Native, Expo SDK `57`, Expo Router e Vitest no cliente mobile.
 
 ## Início rápido
 
